@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // String() 문자형으로 변환
+        // Number() 숫자형으로 변환
+        // Boolean() 불린형으로 변환
+
+        // prompt 입력 --> 문자형
+        let mathScore = Number(prompt('수학 점수 입력'));
+        let engScore = Number(prompt('영어 점수 입력'));
+        alert((mathScore + engScore) / 2 + '점');
+
+        // String() -> 모두 문자형
+
+        // Number() 내에 문자가 있을 경우 NaN
+        // Number() 에서 true -> 1, false -> 0
+        // Number() 에서 null -> 0, undefined -> NaN 
+
+        // Boolean() 숫자 0, "", null, undefined, NaN
+        // 위 5가지는 모두 false, 이외에는 모두 true 반환
+    </script>
+</body>
+</html>

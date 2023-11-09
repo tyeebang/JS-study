@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert는 뭔가를 알려줌. 일방적으로 알림.
+        // prompt는 입력을 받음. (메시지, default값)
+        // confirm은 확인을 받음.
+        
+        let name = prompt('이름 입력.', 'junwoo');
+        // alert('환영합니다, ' + name + '님.');
+        // 취소시 null 값 반환
+        alert(`환영합니다, ${name}님`);
+
+        const IsAdult = confirm('성인이 맞습니까?');
+        // 확인시 true, 취소시 false 반환
+        alert(IsAdult);
+
+        // 단점 1. 스크립트 일시 정지 2. 스타일링 불가
+    </script>
+</body>
+</html>

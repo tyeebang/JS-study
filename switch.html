@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // switch문
+        // switch는 케이스에 맞는 곳 부터 시작하여
+        // 그 아래까지 쭉 실행됨.
+        
+        // 사과 : 100원
+        // 바나나 : 500원
+        // 키위 : 1000원
+        // 멜론 : 5000원
+        // 수박 : 10000원
+
+        let fruit = prompt('과일 입력');
+
+        switch(fruit) {
+            case '사과' :
+                alert('100원입니다.');
+                break;
+            case '바나나' :
+                alert('500원입니다.');
+                break;
+            case '키위' :
+                alert('1000원입니다.');
+                break;
+            case '멜론' :
+            case '수박' :
+                alert('5000원입니다.');
+                break;
+            default :
+                alert('그런 과일은 없노..');
+        }
+    </script>
+</body>
+</html>

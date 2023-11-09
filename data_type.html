@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const NAME = 'junwoo'; // 문자형 String
+        const AGE = 17; // 숫자형 Number
+        // 0으로 나누면 Infinity,
+        // 문자형을 숫자로 나눌 시 NaN (Not a Number)
+        const GENDER = 'male'
+
+        let id; // 출력시 undefined. 지정안됨.
+        let user = null;
+
+        let name1 = "junwoo";
+        let name2 = 'junwoo';
+        let name3 = `junwoo`;
+
+        let message1 = "I'm a boy.";
+        let message2 = 'I\'m a boy.';
+        // backtick은 문자열 내부의 변수 사용할 때 편리
+        let message3 = `I'm a ${GENDER}.`;
+        // 표현식
+        let message4 = `I'm ${AGE + 1} years old.`;
+
+        alert(message4);
+        alert(typeof(NAME)); // 변수의 자료형을 알아냄
+    </script>
+</body>
+</html>

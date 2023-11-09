@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 기본 연산자
+
+        // +, -, *, /, %
+        // **은 거듭제곱. ex) 2 ** 4 == 16
+        // +=, -= 말고도 단축해서 사용 가능.
+        let num = 10; // num은 10
+        num **= 3; // num은 1000
+        // alert(num);
+
+        // ++, -- 증감 연산자.
+        num++; // num은 1001
+        // alert(num);
+
+
+
+        // 비교연산자
+        // Boolean형을 반환.
+        // 1 == '1' -> true, 1 === '1' -> false
+
+        // 조건문
+        if(confirm('만 19세 이상입니까?')) {
+            alert('환영합니다.');
+        } else {
+            alert('꺼져잇');
+        }
+
+
+
+        // 논리 연산자 AND, OR, NOT(||, &&, !)
+        // OR은 true를 발견한 즉시 평가를 멈춤
+        // AND은 false를 발견한 즉시 평가를 멈춤
+
+        let age = prompt('나이를 입력', 0);
+        let isAdult = age > 19;
+
+        if(!isAdult) {
+            alert('꺼져잇');
+        } else {
+            alert('어서오고');
+        }
+
+        // AND가 OR보다 우선순위가 높다.
+    </script>
+</body>
+</html>
